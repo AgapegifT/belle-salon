@@ -49,20 +49,3 @@ New clients can also register on the **Register** page.
 
 ## Security basics included
 Passwords hashed (`password_hash`), prepared statements (no SQL injection), output escaping (`h()`), CSRF token on every form, role checks on every page, simple login throttle.
-
-## Notes
-- Reminders are shown as notifications on events (booking, confirmation, cancel, invoice). Timed reminders would need a scheduled job and are not included.
-- Folder layout: `includes/` (shared code), `assets/css/` (styles), `database/` (SQL), and one folder per role.
-
-## Put it on GitHub
-```bash
-cd salon
-git init
-git add .
-git commit -m "Belle Salon: appointment and management system"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/belle-salon.git
-git push -u origin main
-```
-GitHub stores the code, but GitHub Pages cannot run PHP or MySQL. To let others try it online, use a PHP host
-(for example InfinityFree) and edit `includes/config.php` with that host's database details.
